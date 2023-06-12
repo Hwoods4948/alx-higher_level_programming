@@ -11,12 +11,15 @@ int is_palindrome(listint_t **head);
  * Return: A pointer to the head of the reversed list.
  */
 listint_t *reverse_listint(listint_t **head)
+
 {
 	listint_t *node = *head, *next, *prev = NULL;
+
 	while (node)
+
 	{
 		next = node->next;
-		node-> next = prev;
+		node->next = prev;
 		prev = node;
 	}
 	*head = prev;
@@ -32,6 +35,7 @@ int is_palindrome(listint_t **head)
 {
 	listint_t *tmp, *rev, *mid;
 	size_t size = 0, i;
+
 	if (*head == NULL || (*head)->next == NULL)
 		return (1);
 	tmp = *head;
