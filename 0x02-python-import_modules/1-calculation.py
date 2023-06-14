@@ -4,8 +4,13 @@ if __name__ == "__main__":
 
     a = 10
     b = 5
+
+    result_add =  add(a, b)
+    resut_sub = sub(a, b)
+    result_mul = mul(a, b)
+    result_div = div(a, b)
+
     print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
     print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
     print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
     print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
-
